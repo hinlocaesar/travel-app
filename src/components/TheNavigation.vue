@@ -1,6 +1,6 @@
 <template>
   <div id="nav">
-      <router-link id="logo" to="/">Travel App</router-link>
+    <router-link id="logo" to="/">Travel App</router-link>
     <router-link
         v-for="destination in destinations"
         :key="destination.id"
