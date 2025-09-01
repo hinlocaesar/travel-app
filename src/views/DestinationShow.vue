@@ -4,10 +4,26 @@
       <img :src="`/images/${destination.image}`" :alt="destination.name">
       <p>{{destination.description}}</p>
     </div>
+        <section class="experiences">
+          <h2>Top experience in {{ destination.name }}</h2>
+          <div class="cards">
+            <router-link
+                  v-for="experience in destination.experiences"
+                  :key="experience.slug"
+                  :to="{ name: 'experience.show', params: {experienceSlug: experience.slug}}"
+            >
+                <ExperienceCard
+                  :experience="experience"
+                  />
+              </router-link>
+          </div>
+      </section>
 </template>
 <script>
 import sourceData from '@/data.json'
+import ExperienceCard from '@/components/ExperienceCard.vue'
 export default {
+  components: {ExperienceCard},
   props: {
     id: {
       type: Number,
