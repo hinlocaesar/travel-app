@@ -10,13 +10,17 @@ const router = createRouter({
           component: () => import('@/views/DestinationShow.vue'),
           props: route=>({id:parseInt(route.params.id)}),
           beforeEnter(to, from){
-            const exists = soureData.destinations.find(
-              destination => destination.id === parseInt(to.params.id)
-            )
-            if(!exists) {
-              return {name: 'NotFound'}
-            }
-          },
+              const exists = soureData.destinations.find(
+                destination => destination.id === parseInt(to.params.id)
+              )
+              if(!exists) return {
+                name: 'NotFound',
+                // allows keeping the URL while rendering a different page
+                params: { pathMatch: to.path.split('/').slice(1) },
+                query: to.query,
+                hash: to.hash,
+              }
+            },
           children: [
             {
               path: ':experienceSlug',
