@@ -1,4 +1,4 @@
-import {createRouter, createWebHistory, useRoute} from 'vue-router'
+import {createRouter, createWebHistory} from 'vue-router'
 import Home from '@/views/Home.vue'
 import sourceData from '@/data.json'
 
@@ -9,7 +9,7 @@ const routes = [
     name: 'protected',
     components:{
       default: ()=> import('@/views/Protected.vue'),
-      LeftSidebar: ()=> import('@/components/LeftSidebar.vue')
+      LeftSidebar: ()=> import('@/components/LeftSideBar.vue')
     },
     meta:{
       requiresAuth: true,
@@ -25,7 +25,7 @@ const routes = [
     name: 'invoices',
     components:{
       default: ()=> import('@/views/Invoices.vue'),
-      LeftSidebar: ()=> import('@/components/LeftSidebar.vue'),
+      LeftSidebar: ()=> import('@/components/LeftSideBar.vue'),
     },
     meta:{
       requiresAuth: true,
@@ -36,7 +36,7 @@ const routes = [
     name: 'destination.show',
     component: ()=>import('@/views/DestinationShow.vue'),
     props: route=> ({...route.params, id: parseInt(route.params.id)}),
-    beforeEnter(to, from){
+    beforeEnter(to){
       const exists = sourceData.destinations.find(
         destination => destination.id === parseInt(to.params.id)
       )
@@ -65,7 +65,7 @@ const routes = [
 ]
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHistory('/travel-app/'),
   routes,
   scrollBehavior (to, from, savedPosition) {
     return savedPosition || new Promise((resolve)=>{
@@ -73,7 +73,7 @@ const router = createRouter({
     })
   }
 })
-router.beforeEach((to, from)=>{
+router.beforeEach((to)=>{
   if(to.meta.requiresAuth && !window.user){
     return {name: 'login', query:{ redirect: to.fullPath }}
   }
