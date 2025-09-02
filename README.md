@@ -27,10 +27,7 @@ npm run dev
 ```sh
 npm run build
 ```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
 # travel-app
+
+<img width="1860" height="932" alt="image" src="https://github.com/user-attachments/assets/785c80e4-40da-46ef-92fe-d7a88f7676ea" />
+
