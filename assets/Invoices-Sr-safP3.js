@@ -1,1 +1,0 @@
-import{_ as n,c as o,o as s,a as c}from"./index-CkoUV39d.js";const r={};function t(a,e){return s(),o("div",null,[...e[0]||(e[0]=[c("h1",null,"Invoices",-1)])])}const _=n(r,[["render",t]]);export{_ as default};
