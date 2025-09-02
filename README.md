@@ -1,42 +1,20 @@
-# Travel App
+# travel-app
 
-A modern, responsive travel application built with Vue 3 and Vite, designed to showcase destinations and travel experiences with an intuitive user interface.
+This template should help get you started developing with Vue 3 in Vite.
 
-## 🌟 Features
+## Recommended IDE Setup
 
-- **Destination Showcase**: Browse beautiful travel destinations with detailed information
-- **Experience Gallery**: Explore curated travel experiences and activities
-- **Responsive Design**: Optimized for desktop, tablet, and mobile devices
-- **Modern UI/UX**: Clean, professional interface with smooth navigation
-- **Fast Performance**: Built with Vite for lightning-fast development and production builds
+[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
 
-## 🚀 Tech Stack
+## Customize configuration
 
-- **Frontend**: Vue 3 (Composition API)
-- **Build Tool**: Vite
-- **Router**: Vue Router 4
-- **Styling**: CSS3 with modern layout techniques
-- **Code Quality**: ESLint + Prettier
+See [Vite Configuration Reference](https://vite.dev/config/).
 
-## 📋 Prerequisites
+## Project Setup
 
-- Node.js (version 16.0 or higher)
-- npm or yarn package manager
-
-## 🛠️ Installation & Setup
-
-1. **Clone the repository**
-
-   ```bash
-   git clone <repository-url>
-   cd travel-app
-   ```
-
-2. **Install dependencies**
-
-   ```bash
-   npm install
-   ```
+```sh
+npm install
+```
 
 3. **Start development server**
 
@@ -89,22 +67,10 @@ To create a production build:
 npm run build
 ```
 
-The built files will be generated in the `dist/` directory, ready for deployment to any static hosting service.
+### Lint with [ESLint](https://eslint.org/)
 
-## 🤝 Contributing
+```sh
+npm run lint
+```
 
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-## 📄 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## 🔗 Additional Resources
-
-- [Vue 3 Documentation](https://vuejs.org/)
-- [Vite Configuration Reference](https://vite.dev/config/)
-- [Vue Router Documentation](https://router.vuejs.org/)
+# travel-app
