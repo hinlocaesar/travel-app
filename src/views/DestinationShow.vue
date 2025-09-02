@@ -4,10 +4,7 @@
       <h1>{{ destination.name }}</h1>
       <GoBack />
       <div class="destination-details">
-        <img
-          :src="getImageUrl(destination.image)"
-          :alt="destination.name"
-        />
+        <img :src="getImageUrl(destination.image)" :alt="destination.name" />
         <p>{{ destination.description }}</p>
       </div>
     </section>
@@ -29,9 +26,9 @@
 </template>
 
 <script>
-import sourceData from "@/data.json";
-import ExperienceCard from "@/components/ExperienceCard.vue";
-import GoBack from "@/components/Goback.vue";
+import sourceData from '@/data.json'
+import ExperienceCard from '@/components/ExperienceCard.vue'
+import GoBack from '@/components/Goback.vue'
 
 export default {
   components: { ExperienceCard, GoBack },
@@ -40,15 +37,13 @@ export default {
   },
   computed: {
     destination() {
-      return sourceData.destinations.find(
-        (destination) => destination.id === this.id
-      );
+      return sourceData.destinations.find((destination) => destination.id === this.id)
     },
   },
   methods: {
     getImageUrl(file) {
-      return `${import.meta.env.BASE_URL}images/${file}`;
+      return `${import.meta.env.BASE_URL}images/${file}`
     },
   },
-};
+}
 </script>
