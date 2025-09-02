@@ -41,4 +41,18 @@ export default{
 .main-view{
   width: 100%;
 }
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  .left-sidebar {
+    width: 100%;
+    order: 2;
+  }
+  .main-view {
+    width: 100%;
+    order: 1;
+  }
+}
 </style>
