@@ -1,6 +1,6 @@
 # travel-app
 
-"A Travel App project that emphasizes practicing Vue Router, covering implementations from basic navigation to advanced routing techniques.
+"A Travel App project that emphasizes practicing Vue Router, covering implementations from basic navigation to advanced routing techniques."
 
 ## Recommended IDE Setup
 
