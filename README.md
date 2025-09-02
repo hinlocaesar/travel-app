@@ -1,6 +1,6 @@
 # travel-app
 
-This template should help get you started developing with Vue 3 in Vite.
+"A Travel App project that emphasizes practicing Vue Router, covering implementations from basic navigation to advanced routing techniques."
 
 ## Recommended IDE Setup
 
@@ -74,3 +74,5 @@ npm run lint
 ```
 
 # travel-app
+<img width="1793" height="896" alt="image" src="https://github.com/user-attachments/assets/38f3f16c-e32c-4859-963d-b63778dd7ae0" />
+
